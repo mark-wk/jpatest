@@ -1,0 +1,11 @@
+1.在GitHub上创建一个新的仓库，为了避免错误，初始化时，不要添加 README, license, o或者 gitignore 文件. 你可以等你将你的本地项目推送到GitHub之后，再来添加这些文件。
+2.打开 Git Bash.切换到你当前项目的目录下
+3.将本地项目初始化为一个git仓库（可以跟踪文件变化）  git init
+4.把文件添加进你的本地仓库，这作为你的第一次提交的状态 git add . (不要忘记 . 这表示当前目录下的所有文件)
+5.提交本地文件到本地仓库 git commit -m "First commit"
+6.在GitHub的快速操作页面上，复制远端仓库的URL
+7.在命令提示框下，添加你的本地仓库想要推送到的远端仓库的URL
+  git remote add origin remote repository URL
+  (重新设置远端URL git remote -v 验证新的远程URL)
+8.将本地存储库中的更改推送到GitHub
+  git push origin master
