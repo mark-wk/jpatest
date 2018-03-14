@@ -1,5 +1,8 @@
 package com.artivr.web.service;
 
+import com.artivr.entity.base.TbSysUserEntity;
+
 public interface UserService {
-    Integer getUserName(int id);
+    TbSysUserEntity getUserById(long id);
+
 }

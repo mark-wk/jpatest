@@ -1,4 +1,6 @@
 import com.artivr.Application;
+import com.artivr.web.config.BaseConfiguration;
+import com.artivr.web.config.LogConfiguration;
 import com.artivr.web.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,9 +13,13 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class JpaTest {
     @Autowired
     private UserService userService;
+    @Autowired
+    private BaseConfiguration baseConfiguration;
+    @Autowired
+    private LogConfiguration logConfiguration;
     @Test
-    public void getUserCount(){
-       int a = userService.getUserName(123456789);
-       System.out.println(a);
+    public void dataSourceTest(){
+        baseConfiguration.toString();
+        logConfiguration.toString();
     }
 }

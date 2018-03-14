@@ -10,6 +10,8 @@
     <modules>
         <module>artivr-common</module>
         <module>artivr-web</module>
+        <module>artivr-repository</module>
+        <module>artivr-entity</module>
     </modules>
 
     <!-- 本项目顶层-->
